@@ -46,6 +46,17 @@ Date: 9/28/2026
             });
         });
     </script>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("p").fadeIn();
+            });
+            $(".btn2").click(function(){
+                $("p").fadeOut();
+            });
+        })
+    </script>
 </head>
 <body>
     <h1>Using jQuery Selectors and Events</h1>
@@ -58,5 +69,9 @@ Date: 9/28/2026
     <button id="btn3">Max height</button>
 
     <div id="box" style="background:red;height:100px;width:100px;margin:6px;"></div>
+
+    <p>
+        This will make the paragraphs disappear if your mouse is over it.
+    </p>
 </body>
 </html>
