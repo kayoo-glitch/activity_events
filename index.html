@@ -19,8 +19,24 @@ Date: 9/28/2026
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/jquery.validate.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("p").on({
+            mouseenter: function(){
+                $(this).css("color", "red");
+            },
+            mouseleave: function(){
+                $(this).css("color", "black");
+            }
+        });
+    });
+    </script>
 </head>
 <body>
-    
+    <h1>Using jQuery Selectors and Events</h1>
+    <p>
+        This will turn the paragraph red if your mouse is over this.
+    </p>
 </body>
 </html>
