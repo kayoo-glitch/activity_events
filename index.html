@@ -32,12 +32,16 @@ Date: 9/28/2026
     </script>
     <script>
         $(document).ready(function(){
-            $(document).ready(function(){
             $("#btn1").click(function(){
-                $("#box").animate({height: "300px"});
+                $("#shape").animate({height: "100px"});
             });
+            $(document).ready(function(){
             $("#btn2").click(function(){
-                $("#box").animate({height: "100px"});
+                $("#shape").animate({height: "300px"});
+            });
+            $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("#shape").animate({height: "500px"});
             });
         });
     </script>
@@ -48,8 +52,9 @@ Date: 9/28/2026
         This will turn the paragraph red if your mouse is over this.
     </p>
     
-    <button id="btn1">Max height</button>
-    <button id="btn2">Regular height</button>
+    <button id="btn1">Regular height</button>
+    <button id="btn2">Medium height</button>
+    <button id="btn3">Max height</button>
 
     <div id="box" style="background:red;height:100px;width:100px;margin:6px;"></div>
 </body>
